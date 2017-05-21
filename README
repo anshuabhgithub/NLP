@@ -1,0 +1,5 @@
+go to main folder
+create an inviroment with conda with nltk and networkx installed in the inviroment 
+activate enviroment
+and run nlp script in folder
+
