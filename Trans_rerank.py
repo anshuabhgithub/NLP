@@ -20,8 +20,6 @@ for i in range(1,4):
 
 
 
-# temp = time.time()
-# print(temp -start)
 
 ## part of speach of interest
 

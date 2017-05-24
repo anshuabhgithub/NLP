@@ -33,7 +33,9 @@ if args.rerank != None:
         rank_file = open('rank.pkl','rb')
         rank = pickle.load(rank_file)
         rank_file.close()
+        print("rank of words before reranking")
         print(rank[:N])
+        print("rank of words after reranking")
         re.re_rank(N,rank)
 
 if args.compare != None:

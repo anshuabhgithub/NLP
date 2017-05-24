@@ -1,1 +1,51 @@
+Package required to run the pronoun
+Python3.X
+networkx
+conda
 
+Download  mini coda package form https://conda.io/miniconda.html
+
+##### Step 1 ,package download
+then run the following commands to create environment and install necessary package.
+
+$conda create -n nlp python=3.6.1
+$conda install -n nlp nltk,networkx,matplotlib,numpy
+$source activate nlp
+
+To check the if all the package is in place, type in the following command to see the list of installed package
+
+$conda list
+
+##step 2 download nltk data
+
+if all the package are present than download nltk book data for that execute following command
+
+$python
+
+then
+>>import nltk
+>>nltk.download()
+
+Select the book and download
+
+## How to Use the programm
+
+once data has been downloaded exit the python Interpreter go to terminal with nlp environment activated
+
+# To Get the rank of word from script file , type in following command
+
+go to folder which contain main.py file
+
+$python main.py --rank N
+
+Top N word will be printed on screen
+
+#To compare top N word with transcript word , type in following command
+
+$python main.py --compare N
+
+it will print list of word those are semantically close to word in top N list ,same list will be written in similarity_out.txt file
+
+#TO rerank previously top N ranked word based on transcript files
+
+$python main.py --rerank N
